@@ -33,7 +33,7 @@ export default class NetworkLayer {
       request.getVariables()
     ).then((payload) => {
       if (payload.errors) {
-        request.reject(createRequestError(request, requestType, payload));
+        //request.reject(createRequestError(request, requestType, payload));
         if (this.onError) {
           this.onError(payload.errors, request);
         }
